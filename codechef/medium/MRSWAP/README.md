@@ -56,16 +56,28 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:05:04.202Z  
+**Submitted:** 2026-08-19T15:10:29.544Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,n,a;
+    int t,n;
     cin >> t;
     while(t--){
+        cin >> n;
+        vector <long long> a(2*n);
+        
+        for(int i=0; i<2*n; i++) {
+            cin >> a[i];
+        }
+        long long ans = 0;
+        
+        for(int i=0; i<n; i++){
+            ans += max(a[i],a[2*n-1-i]);
+        }
+        cout << ans << endl;
         
     }
 	// your code goes here
