@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,x,y,z;
+    cin >> t;
+    while(t--){
+        cin >> x >> y >> z;
+        cout << min(y, 10*x) * z << endl;
+    }
+    return 0;
+}
