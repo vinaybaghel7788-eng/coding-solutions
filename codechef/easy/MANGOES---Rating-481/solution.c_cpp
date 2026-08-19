@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,w,x,y,z;
+    cin >> t;
+    while (t--){
+        cin >> w >> x >> y >> z;
+        int s = z*x;
+        int c = y*z;
+        cout << (w +s) - c << endl; 
+    }
+	// your code goes here
+
+}
