@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:28:06.429Z  
+**Submitted:** 2026-08-19T15:37:04.419Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,9 +69,23 @@ int main() {
     cin >> t;
     while(t--){
         cin >> n >> k;
+        int sum = 0 ;
+        int y=0;
+        int answer =0;
+        
         for(int i=0; i<n; i++){
+            int x;
+            cin >> x;
+            
+            sum =sum + x;
+            y= max(y,x);
+            
+            if(sum - y <= k){
+                answer = i+1;
+            }
             
         }
+        cout << answer << endl;
     }
 	// your code goes here
 
