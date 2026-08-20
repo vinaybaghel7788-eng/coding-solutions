@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,c,x,y;
+    cin >> t;
+    while(t--){
+        cin >> c >> x >> y;
+        int r = c-x;
+        cout << r*y << endl;
+        
+        
+    }
+	// your code goes here
+
+}
