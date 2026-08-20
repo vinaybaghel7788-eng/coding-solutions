@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-20T10:49:21.899Z  
+**Submitted:** 2026-08-20T10:50:44.689Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
