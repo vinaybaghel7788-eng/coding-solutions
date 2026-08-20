@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t, r1,r2,r3;
+    cin >> t;
+    while(t--){
+        cin >> r1>>r2 >> r3;
+        if(r1>r2+r3 || r2>r1+r3 || r3>r2+r1){
+            cout << "yes" << endl;
+        } else{
+            cout << "no" << endl;
+        }
+        
+    }
+	// your code goes here
+
+}
