@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+while (t--) {
+        int a, b, c, d;
+        cin >> a >> b >> c >> d;
+
+        int final_price_first = a - c;
+        int final_price_second = b - d;
+
+        if (final_price_first < final_price_second) {
+            cout << "First\n";
+        } else if (final_price_first > final_price_second) {
+            cout << "Second\n";
+        } else {
+            cout << "Any\n";
+        }
+    }
+
+    return 0;
+}
