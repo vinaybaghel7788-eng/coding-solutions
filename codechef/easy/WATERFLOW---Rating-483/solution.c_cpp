@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,w,x,y,z;
+    cin >> t;
+    while(t--){
+        cin >> w >> x >> y >> z;
+        int a = z*y + w;
+        
+        if(a<x){
+            cout << "Unfilled" << endl;
+        } else if(a>x){
+            cout << "overFlow" << endl;
+        } else{
+            cout << "filled" << endl;
+        }
+    }
+	return 0;
+
+}
