@@ -58,7 +58,7 @@ For each test case, in a new line, print $1$ if the two lists are equal, else pr
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-21T04:34:55.069Z  
+**Submitted:** 2026-08-21T04:34:55.600Z  
 
 ```cpp
 
