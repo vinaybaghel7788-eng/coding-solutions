@@ -54,9 +54,9 @@ myCircularDeque.getFront();     // return 4
 ## Solution
 
 **Language:** C++  
-**Runtime:** 10 ms (beats 6.71%)  
-**Memory:** 24.6 MB (beats 5.40%)  
-**Submitted:** 2026-09-01T04:40:50.713Z  
+**Runtime:** 5 ms (beats 32.67%)  
+**Memory:** 24.5 MB (beats 40.85%)  
+**Submitted:** 2026-09-01T04:41:49.457Z  
 
 ```cpp
 struct node
