@@ -67,28 +67,27 @@ Thus, the net export of country $C$ is $-11$ and it is not in trade surplus.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T08:54:00.552Z  
+**Submitted:** 2026-09-03T09:08:17.901Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,a,b,c,d;
+    int t;
     cin >> t;
     while(t--){
-        cin >> a >> b >> c >> d;
-        int netA=a-b;
-        int netB=b-c;
-        int expt= netB-netA;
-        if(expt>0){
-            cout << "yes" << endl;
-        } else{
-            cout << "no" << endl;
-        }
+    int a1,a2,b1,b2;
+    cin >> a1 >> a2 >> b1 >> b2;
+    int net_exports=(a2+b2)-(a1+b1);
+    if(net_exports>0){
+        cout << "yes" << endl;
+    } else{
+        cout << "no" << endl;
     }
+    
 	// your code goes here
-
+}
 }
 
 ```
