@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,p,q,r,s;
+    cin >> t;
+    while(t--){
+        cin >> p >> q >> r >> s;
+        if(p+q+r <s || p+q+s <r || p+s+r <q || q+s+r <p){
+            cout << "yes" << endl;
+        } else{
+            cout << "no" << endl;
+        }
+    }
+	// your code goes here
+
+}
