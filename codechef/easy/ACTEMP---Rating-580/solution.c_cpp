@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,n,d;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        int r_count = 0;
+        
+        for(int i=0; i<n; i++){
+            int r;
+            cin >> r;
+            if(r>=1000){
+                r_count++ ;
+            }
+            }
+            
+        
+        cout << r_count << endl;
+        
+    }
+	// your code goes here
+
+
+}
