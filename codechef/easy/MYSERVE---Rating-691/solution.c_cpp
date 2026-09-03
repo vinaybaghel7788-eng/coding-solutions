@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,p,q;
+    cin >> t;
+    while(t--){
+        cin >> p >> q;
+        int t = (p+q)/2;
+        if(t%2==0){
+            cout << "alice" << endl;
+        } else{
+            cout << "bob" << endl;
+        }
+        
+    }
+	// your code goes here
+
+}
