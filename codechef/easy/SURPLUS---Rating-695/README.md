@@ -67,7 +67,7 @@ Thus, the net export of country $C$ is $-11$ and it is not in trade surplus.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T09:08:17.901Z  
+**Submitted:** 2026-09-03T09:08:27.302Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
