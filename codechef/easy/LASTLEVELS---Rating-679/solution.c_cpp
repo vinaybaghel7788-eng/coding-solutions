@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,x,y,z;
+    cin >> t;
+    while(t--){
+        cin >> x >> y >> z;
+        int a = (x-1)/3;
+        cout << (x*y)+(a*z) << endl;
+    } 
+	// your code goes here
+
+}
