@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,x,y;
+    cin >> t;
+    while(t--){
+        cin >> x >> y;
+        int a= (x/y) + (x%y);
+        cout << a << endl;
+    }
+	// your code goes here
+
+}
