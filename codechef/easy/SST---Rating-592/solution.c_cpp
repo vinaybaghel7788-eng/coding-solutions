@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,a,b;
+    cin >> t;
+    while(t--){
+        cin >> a >> b;
+        int c=a*10;
+        int d=b*5;
+        if(c==d){
+            cout << "any" << endl;
+        } else if(c>d){
+            cout << "first" << endl;
+        } else{
+            cout << "second" << endl;
+        }
+        
+        
+    }
+	// your code goes here
+
+}
