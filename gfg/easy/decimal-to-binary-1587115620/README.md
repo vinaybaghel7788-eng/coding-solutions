@@ -29,7 +29,7 @@ Explanation: The binary representation of 33 is "100001", since 33 = 1×25 + 0×
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T06:14:59.219Z  
+**Submitted:** 2026-09-07T06:23:20.372Z  
 
 ```cpp
 class Solution {
