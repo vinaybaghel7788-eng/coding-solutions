@@ -4,9 +4,10 @@ class Solution {
         if(n==0)
             return "";
             else{
-                string temp =decToBinary(n/2);
-                temp = temp+to_string(n%2);
-                return temp;
+                return decToBinary(n/2) + to_string(n%2);
+                //string temp =decToBinary(n/2);
+               // temp = temp+to_string(n%2);
+               // return temp;
             }
         // code here
         
