@@ -8,13 +8,12 @@ int main() {
         cin >> x >> a >> b;
         int c = a + 2*b;
         
-        if(c>=x){
-            cout << "qualify" << endl;
+        if(c >=x){
+            cout < "Qualify" << endl;
         } else{
-            cout << "not qualify" << endl;
+            cout << "Not Qualify" << endl;
         }
     }
-    return 0;
 	// your code goes here
 
 }
