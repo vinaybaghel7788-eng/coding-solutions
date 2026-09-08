@@ -58,7 +58,7 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T08:11:21.087Z  
+**Submitted:** 2026-09-08T08:12:29.899Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,11 +72,12 @@ int main() {
         cin  >> x >> a >> b;
         int total_points = a+2*b;
         if(total_points >= x){
-            cout << "qualify" << endl;
+            cout << "Qualify" << endl;
         } else{
-            cout << "not qualify" << endl;
+            cout << "notQualify" << endl;
         }
     }
+    return 0;
     
 	// your code goes here
 
