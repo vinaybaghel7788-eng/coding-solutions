@@ -58,7 +58,7 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T08:03:21.434Z  
+**Submitted:** 2026-09-08T08:04:30.662Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,12 +71,13 @@ int main() {
         cin >> x >> a >> b;
         int c = 1*a + 2*b;
         
-        if(x<=c){
+        if(c>=x){
             cout << "qualify" << endl;
         } else{
             cout << "not qualify" << endl;
         }
     }
+    return 0;
 	// your code goes here
 
 }
