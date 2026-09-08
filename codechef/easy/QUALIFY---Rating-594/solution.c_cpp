@@ -9,11 +9,12 @@ int main() {
         cin  >> x >> a >> b;
         int total_points = a+2*b;
         if(total_points >= x){
-            cout << "qualify" << endl;
+            cout << "Qualify" << endl;
         } else{
-            cout << "not qualify" << endl;
+            cout << "notQualify" << endl;
         }
     }
+    return 0;
     
 	// your code goes here
 
