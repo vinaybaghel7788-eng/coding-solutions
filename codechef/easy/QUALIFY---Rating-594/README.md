@@ -58,27 +58,26 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T08:12:29.899Z  
+**Submitted:** 2026-09-08T08:07:06.775Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t;
+    int t,x,a,b;
     cin >> t;
     while(t--){
-        int x,a,b;
-        cin  >> x >> a >> b;
-        int total_points = a+2*b;
-        if(total_points >= x){
-            cout << "Qualify" << endl;
+        cin >> x >> a >> b;
+        int c = a + 2*b;
+        
+        if(c>=x){
+            cout << "qualify" << endl;
         } else{
-            cout << "notQualify" << endl;
+            cout << "not qualify" << endl;
         }
     }
     return 0;
-    
 	// your code goes here
 
 }
