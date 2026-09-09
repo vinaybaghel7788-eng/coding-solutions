@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:13:04.782Z  
+**Submitted:** 2026-09-09T15:21:35.771Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -89,6 +89,7 @@ int main() {
     while(t--){
         int n;
         cin >> n;
+        
         
     }
 	// your code goes here
