@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:01:23.096Z  
+**Submitted:** 2026-09-09T15:09:01.020Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,10 +85,21 @@ int main() {
     cin >> t;
     while(t--){
         int n;
+        string a,b;
         cin >> n;
-        if
+        cin >> a >> b;
+        int aA = count(a.begin(),a.end(),'a');
+        int bB = count(b.begin(),b.end(),'a');
+        
+        if(aA == n-bB){
+            cout << "yes" << endl;
+        } else{
+            cout << "no" << endl;
+        }
+        
         
     }
+    return 0;
 	// your code goes here
 
 }
