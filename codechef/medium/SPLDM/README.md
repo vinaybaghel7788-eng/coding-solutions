@@ -76,7 +76,7 @@ It can be verified that there's no way to use the launcher more than $3$ times b
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:33:13.645Z  
+**Submitted:** 2026-09-09T15:33:20.642Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
