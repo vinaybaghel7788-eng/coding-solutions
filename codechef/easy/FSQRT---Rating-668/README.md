@@ -45,19 +45,21 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T09:22:02.009Z  
+**Submitted:** 2026-09-13T14:29:05.727Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,n;
+    int t;
     cin >> t;
     while(t--){
+        int n;
         cin >> n;
-        int ans =sqrt(n);
+        int ans= sqrt(n);
         cout << ans << endl;
+        
     }
 	// your code goes here
 
