@@ -2,12 +2,14 @@
 using namespace std;
 
 int main() {
-    int t,n;
+    int t;
     cin >> t;
     while(t--){
+        int n;
         cin >> n;
-        int ans =sqrt(n);
+        int ans= sqrt(n);
         cout << ans << endl;
+        
     }
 	// your code goes here
 
