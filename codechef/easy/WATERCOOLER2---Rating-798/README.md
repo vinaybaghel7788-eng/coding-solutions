@@ -51,7 +51,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T04:25:37.476Z  
+**Submitted:** 2026-09-14T04:27:24.061Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -61,14 +61,13 @@ int main() {
     int t;
     cin >> t;
     while(t--){
-        int x,y;
+        long long x,y;
         cin >> x >> y;
-        if(x>=y){
-            cout << "0" << endl;
-        } else{
-            cout << y/x << endl;
-        }
+        
+        long long ans = (y-1)/x;
+        cout << ans << endl;
     }
+    return 0;
 	// your code goes here
 
 }
