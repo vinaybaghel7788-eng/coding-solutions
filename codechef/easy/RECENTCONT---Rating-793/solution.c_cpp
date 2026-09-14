@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        
+        int start_count =0;
+        int lti_count =0;
+        
+        for(int i=0; i<n; i++){
+            string code;
+            cin >> code;
+            
+            if(code == "START38"){
+                start_count++;
+            } else{
+                lti_count++;
+            }
+        }
+        cout << start_count << " " << lti_count << endl;
+        
+    }
+    return 0;
+    
+	// your code goes here
+
+}
