@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int x;
+    cin >> x;
+    
+    string states[] = {"NORMAL","HUGE","SMALL"};
+    
+    cout << states[x%3] << endl;
+}
+int main() {
+    int t;
+    cin >> t;
+    while(t--){
+        solve();
+    } 
+    return 0;
+	// your code goes here
+
+}
