@@ -9,7 +9,7 @@ int main() {
         cin >> x >> y;
         int required_water = 2*y;
         
-            if(x>required_water){
+            if(x>=required_water){
                  int max_people = x/required_water;
                 cout << max_people << endl;
                 
