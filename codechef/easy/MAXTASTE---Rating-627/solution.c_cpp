@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--){
+        int a,b,c,d;
+        cin >> a >> b >> c >> d;
+        int total_taste = 0;
+        
+        total_taste = max(a,b) + max(c,d);
+        cout << total_taste << endl;
+    }
+    return 0;
+    
+	// your code goes here
+
+}
