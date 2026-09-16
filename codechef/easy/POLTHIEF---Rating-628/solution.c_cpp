@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int x,y;
+    cin >> x >> y;
+    int total_time =0;
+    total_time = y/2 + (x-y);
+	
+	cout << total_time << endl;
+	// your code goes here
+
+}
