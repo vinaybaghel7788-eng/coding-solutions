@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;;
+    while(t--){
+        int x,y;
+        cin >> x >> y;
+        int required_water = 2*y;
+        
+            if(x>required_water){
+                 int max_people = x/required_water;
+                cout << max_people << endl;
+                
+            } else{
+                cout << "0" << endl;
+            }
+        }
+	// your code goes here
+
+}
