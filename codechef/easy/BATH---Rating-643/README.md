@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T13:37:26.164Z  
+**Submitted:** 2026-09-16T13:39:00.165Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -68,7 +68,7 @@ int main() {
         cin >> x >> y;
         int required_water = 2*y;
         
-            if(x>required_water){
+            if(x>=required_water){
                  int max_people = x/required_water;
                 cout << max_people << endl;
                 
