@@ -56,28 +56,32 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T13:46:37.041Z  
+**Submitted:** 2026-09-26T14:58:04.919Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int t,n,m;
-    cin >> t;
-    while(t--){
-        cin >> n >> m;
-        
-        if(n%m==0 && (n/m)%2 ==0){
-            cout << "yes" << endl;
-        } else{
-            cout << "no" << endl;
-        }
+void solve() {
+    int n, m;
+    cin >> n >> m;
+    
+    if (n % m == 0 && (n / m) % 2 == 0) {
+        cout << "Yes\n";
+    } else {
+        cout << "No\n";
     }
-	// your code goes here
-
 }
 
+int main() {
+    
+    int t;
+    cin >> t;
+    while(t--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
