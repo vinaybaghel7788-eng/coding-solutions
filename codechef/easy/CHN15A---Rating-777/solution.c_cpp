@@ -5,18 +5,22 @@ int main() {
     int t;
     cin >> t;
     while(t--){
-        int a,b;
-        cin >> a >> b;
-        if(a>b){
-            cout << ">" << endl;
-        } else if(a<b){
-            cout << "<" << endl;
-        } else{
-            cout << "=" << endl;
-        }
+        int n,k;
+        cin >> n >> k;
         
+        int wolverine_count =0;
+        for(int i=0; i<n; i++) {
+        int characterstics_value;
+        cin  >> characterstics_value;
+        
+        if((characterstics_value + k) % 7 == 0) {
+            wolverine_count++;
+        }
+        }
+        cout << wolverine_count << endl;
     }
     return 0;
+    
 	// your code goes here
 
 }
