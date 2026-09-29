@@ -54,7 +54,7 @@ After transmogrification, the characteristic values become {12,14,11,45,11}, out
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T15:37:39.986Z  
+**Submitted:** 2026-09-29T15:45:33.405Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -64,18 +64,22 @@ int main() {
     int t;
     cin >> t;
     while(t--){
-        int a,b;
-        cin >> a >> b;
-        if(a>b){
-            cout << ">" << endl;
-        } else if(a<b){
-            cout << "<" << endl;
-        } else{
-            cout << "=" << endl;
-        }
+        int n,k;
+        cin >> n >> k;
         
+        int wolverine_count =0;
+        for(int i=0; i<n; i++) {
+        int characterstics_value;
+        cin  >> characterstics_value;
+        
+        if((characterstics_value + k) % 7 == 0) {
+            wolverine_count++;
+        }
+        }
+        cout << wolverine_count << endl;
     }
     return 0;
+    
 	// your code goes here
 
 }
