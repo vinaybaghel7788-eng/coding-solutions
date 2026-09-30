@@ -2,10 +2,6 @@
 using namespace std;
 
 int main() {
-    int B, H, C;
-    cin >> B >> H >> C;
+	// your code goes here
 
-    cout << min(B / 2, H + C) << endl;
-
-    return 0;
 }
