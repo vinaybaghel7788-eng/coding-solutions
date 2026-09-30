@@ -18,7 +18,7 @@ int main() {
             occupied[x] = true;
         }
 
-        
+        // Find the lowest available seat for each person
         for (int person = 0; person < K; person++) {
             for (int seat = 1; seat <= N; seat++) {
                 if (!occupied[seat]) {
