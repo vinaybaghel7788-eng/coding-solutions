@@ -1,17 +1,11 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int T;
-    cin >> T;
+    int t, n, m;
+    cin >>t >> n>> m;
 
-    while (T--) {
-        int B, H, C;
-        cin >> B >> H >> C;
-
-        cout << min(B / 2, H + C) << endl;
-    }
+    cout << min(t / 2, H + C) << endl;
 
     return 0;
 }
