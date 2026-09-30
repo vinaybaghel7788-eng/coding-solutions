@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:12:24.361Z  
+**Submitted:** 2026-09-30T15:11:16.665Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main() {
             occupied[x] = true;
         }
 
-        
+        // Find the lowest available seat for each person
         for (int person = 0; person < K; person++) {
             for (int seat = 1; seat <= N; seat++) {
                 if (!occupied[seat]) {
