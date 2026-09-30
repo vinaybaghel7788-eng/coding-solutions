@@ -54,17 +54,21 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:04:23.225Z  
+**Submitted:** 2026-09-30T15:04:49.177Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int B, H, C;
+    cin >> B >> H >> C;
 
+    cout << min(B / 2, H + C) << endl;
+
+    return 0;
 }
-
 ```
 
 ---
