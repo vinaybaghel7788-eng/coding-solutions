@@ -54,17 +54,25 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:09:32.859Z  
+**Submitted:** 2026-09-30T15:10:11.606Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t, n, m;
-    cin >>t >> n>> m;
+    int T;
+    cin >> T;
 
-    cout << min(t / 2, H + C) << endl;
+    while (T--) {
+        int N, M;
+        cin >> N >> M;
+
+        if (N % 2 == 0 || M % 2 == 0)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
 
     return 0;
 }
