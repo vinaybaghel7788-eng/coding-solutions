@@ -54,11 +54,10 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:05:43.497Z  
+**Submitted:** 2026-09-30T15:10:06.144Z  
 
 ```c_cpp
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -66,10 +65,13 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int B, H, C;
-        cin >> B >> H >> C;
+        int N, M;
+        cin >> N >> M;
 
-        cout << min(B / 2, H + C) << endl;
+        if (N % 2 == 0 || M % 2 == 0)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
     }
 
     return 0;
