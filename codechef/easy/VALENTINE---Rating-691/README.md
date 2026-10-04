@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T17:14:19.850Z  
+**Submitted:** 2026-10-04T17:18:24.248Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -68,11 +68,7 @@ int main() {
     while(t--){
     int x,y;
     cin >> x >> y;
-    if(x>y){
-        cout << x/y << endl;
-    } else{
-        cout << 0 << endl;
-    }
+        cout << (x/y)<< endl;
     }
 	// your code goes here
 
