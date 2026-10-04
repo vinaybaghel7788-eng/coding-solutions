@@ -56,23 +56,23 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T10:49:56.206Z  
+**Submitted:** 2026-10-04T17:14:19.850Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,x,y;
+    int t;
     cin >> t;
     while(t--){
-        cin >> x >> y;
-        if(x<y){
-            cout << "0" << endl;
-        } else{
-            int a = x/y;
-            cout << a << endl;
-        }
+    int x,y;
+    cin >> x >> y;
+    if(x>y){
+        cout << x/y << endl;
+    } else{
+        cout << 0 << endl;
+    }
     }
 	// your code goes here
 
