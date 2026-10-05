@@ -67,24 +67,27 @@ Bob
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T08:41:53.823Z  
+**Submitted:** 2026-10-05T13:56:18.854Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,p,q;
+    int t;
     cin >> t;
     while(t--){
+        int p,q;
         cin >> p >> q;
-        int t = (p+q)/2;
-        if(t%2==0){
-            cout << "alice" << endl;
-        } else{
-            cout << "bob" << endl;
-        }
         
+        int total_serves = p + q;
+        
+        int turns = total_serves / 2;
+        if (turns % 2 == 0) {
+            cout << "Alice\n";
+        } else {
+            cout << "Bob\n";
+        }
     }
 	// your code goes here
 
