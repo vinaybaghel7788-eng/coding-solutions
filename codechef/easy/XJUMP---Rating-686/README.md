@@ -57,19 +57,20 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T10:41:23.838Z  
+**Submitted:** 2026-10-06T16:55:51.928Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t,x,y;
+    int t;
     cin >> t;
     while(t--){
+        int x,y;
         cin >> x >> y;
-        int a= (x/y) + (x%y);
-        cout << a << endl;
+        int ans = (x/y) + (x%y);
+        cout << ans << endl;
     }
 	// your code goes here
 
