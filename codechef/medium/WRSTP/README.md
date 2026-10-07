@@ -80,13 +80,47 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:56:09.709Z  
+**Submitted:** 2026-10-07T15:57:48.468Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        string S;
+
+        cin >> N >> S;
+
+        int x = 0, y = 0;
+
+        // Find current position
+        for (char c : S) {
+            if (c == 'U') y++;
+            else if (c == 'D') y--;
+            else if (c == 'L') x--;
+            else if (c == 'R') x++;
+        }
+
+        bool possible = false;
+
+        // Check whether reversing exactly one move reaches (0,0)
+        if (x == 2 && y == 0) possible = true;   // R -> L
+        if (x == -2 && y == 0) possible = true;  // L -> R
+        if (x == 0 && y == 2) possible = true;   // U -> D
+        if (x == 0 && y == -2) possible = true;  // D -> U
+
+        if (possible)
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
+
+    return 0;
 	// your code goes here
 
 }
