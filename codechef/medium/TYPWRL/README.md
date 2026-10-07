@@ -62,13 +62,42 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:55:00.661Z  
+**Submitted:** 2026-10-07T15:55:45.625Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, M;
+        cin >> N >> M;
+
+        string S, L;
+        cin >> S >> L;
+
+        int ans = 1;
+        int count = 1;
+
+        for (int i = 1; i < N; i++) {
+            bool prevLeft = L.find(S[i - 1]) != string::npos;
+            bool currLeft = L.find(S[i]) != string::npos;
+
+            if (prevLeft == currLeft)
+                count++;
+            else
+                count = 1;
+
+            ans = max(ans, count);
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 	// your code goes here
 
 }
