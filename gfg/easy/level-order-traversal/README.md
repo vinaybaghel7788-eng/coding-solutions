@@ -29,7 +29,7 @@ Explanation: We begin with the root node 10, which forms the first level as [10]
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T06:31:14.161Z  
+**Submitted:** 2026-10-07T06:32:28.379Z  
 
 ```cpp
 /* Structure of Binary Tree Node
