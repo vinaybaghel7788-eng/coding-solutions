@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T,X,Y;
+    cin >> T;
+    while(T--){
+        cin >> X >> Y;
+        int Z =X*Y;
+        
+        cout << Z/100 << endl;
+        
+        
+    }
+	// your code goes here
+
+}
