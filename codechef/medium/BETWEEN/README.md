@@ -57,16 +57,22 @@ Your rival team is $1$st, and you are $2$nd, no teams between you.
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:13:59.075Z  
+**Submitted:** 2026-10-21T15:14:04.005Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+        int X, Y;
+    cin >> X >> Y;
+
+    cout << abs(X - Y) - 1 << endl;
+
+    return 0;
 	// your code goes here
 
 }
