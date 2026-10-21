@@ -2,6 +2,12 @@
 using namespace std;
 
 int main() {
+        int X, Y;
+    cin >> X >> Y;
+
+    cout << abs(X - Y) - 1 << endl;
+
+    return 0;
 	// your code goes here
 
 }
