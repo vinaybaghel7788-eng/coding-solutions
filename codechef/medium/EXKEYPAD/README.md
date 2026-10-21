@@ -53,37 +53,37 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:24:37.309Z  
+**Submitted:** 2026-10-21T15:25:47.736Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-     int T;
+    int T;
     cin >> T;
 
     while (T--) {
-        int N, D;
-        cin >> N >> D;
+        int N, S;
+        cin >> N >> S;
 
-        while (true) {
-            string s = to_string(N);
-
-            if (s.find(char('0' + D)) == string::npos) {
-                cout << N << '\n';
-                break;
+        if (S > 4 * N || S < -N) {
+            cout << -1 << '\n';
+        }
+        else if (S >= 0) {
+            if (S % 4 == 0) {
+                cout << S / 4 << '\n';
+            } else {
+                cout << -1 << '\n';
             }
-
-            N++;
+        }
+        else {
+            cout << -S << '\n';
         }
     }
 
     return 0;
-	// your code goes here
-
 }
-
 ```
 
 ---
