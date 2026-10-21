@@ -6,21 +6,20 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int N, S;
-        cin >> N >> S;
+        int N, D;
+        cin >> N >> D;
 
-        if (S > 4 * N || S < -N) {
-            cout << -1 << '\n';
-        }
-        else if (S >= 0) {
-            if (S % 4 == 0) {
-                cout << S / 4 << '\n';
-            } else {
-                cout << -1 << '\n';
+        int x = N;
+
+        while (true) {
+            string s = to_string(x);
+
+            if (s.find(char('0' + D)) == string::npos) {
+                cout << x << '\n';
+                break;
             }
-        }
-        else {
-            cout << -S << '\n';
+
+            x++;
         }
     }
 
