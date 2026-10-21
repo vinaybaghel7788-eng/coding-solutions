@@ -2,6 +2,26 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+     int T;
+    cin >> T;
+
+    while (T--) {
+        int N, S;
+        cin >> N >> S;
+
+        if (S > 4 * N || S < -N) {
+            cout << -1 << '\n';
+            continue;
+        }
+
+        if (S >= 0) {
+            cout << (S + 3) / 4 << '\n';
+        } else {
+            cout << -S << '\n';
+        }
+    }
+
+    return 0;
+	
 
 }
