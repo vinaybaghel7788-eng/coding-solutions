@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-     int T;
+    int T;
     cin >> T;
 
     while (T--) {
@@ -11,17 +11,18 @@ int main() {
 
         if (S > 4 * N || S < -N) {
             cout << -1 << '\n';
-            continue;
         }
-
-        if (S >= 0) {
-            cout << (S + 3) / 4 << '\n';
-        } else {
+        else if (S >= 0) {
+            if (S % 4 == 0) {
+                cout << S / 4 << '\n';
+            } else {
+                cout << -1 << '\n';
+            }
+        }
+        else {
             cout << -S << '\n';
         }
     }
 
     return 0;
-	
-
 }
