@@ -57,7 +57,7 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:22:45.597Z  
+**Submitted:** 2026-10-21T15:23:41.353Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,23 +71,28 @@ int main() {
         int N, S;
         cin >> N >> S;
 
-        if (S > 4 * N || S < -N) {
-            cout << -1 << '\n';
-        }
-        else if (S >= 0) {
-            if (S % 4 == 0) {
-                cout << S / 4 << '\n';
-            } else {
-                cout << -1 << '\n';
+        int ans = -1;
+
+        for (int correct = 0; correct <= N; correct++) {
+            for (int wrong = 0; wrong <= N - correct; wrong++) {
+                int score = correct * 4 - wrong;
+
+                if (score == S) {
+                    int attempted = correct + wrong;
+
+                    if (ans == -1 || attempted < ans) {
+                        ans = attempted;
+                    }
+                }
             }
         }
-        else {
-            cout << -S << '\n';
-        }
+
+        cout << ans << endl;
     }
 
     return 0;
 }
+
 ```
 
 ---
