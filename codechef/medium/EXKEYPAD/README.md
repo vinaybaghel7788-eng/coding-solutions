@@ -53,7 +53,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:27:53.220Z  
+**Submitted:** 2026-10-21T15:29:06.615Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -64,20 +64,41 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int N, D;
+        long long N;
+        int D;
         cin >> N >> D;
 
-        int x = N;
+        string s = to_string(N);
 
         while (true) {
-            string s = to_string(x);
+            bool found = false;
 
-            if (s.find(char('0' + D)) == string::npos) {
-                cout << x << '\n';
+            for (int i = 0; i < s.size(); i++) {
+                if (s[i] == char('0' + D)) {
+                    s[i]++;
+                    for (int j = i + 1; j < s.size(); j++) {
+                        s[j] = '0';
+                    }
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                cout << s << '\n';
                 break;
             }
 
-            x++;
+            for (int i = s.size() - 1; i >= 0; i--) {
+                if (s[i] > '9') {
+                    if (i == 0) {
+                        s = '1' + string(s.size(), '0');
+                        break;
+                    }
+                    s[i] = '0';
+                    s[i - 1]++;
+                }
+            }
         }
     }
 
