@@ -57,7 +57,7 @@ SAME
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T04:17:17.613Z  
+**Submitted:** 2026-10-25T18:15:19.824Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
