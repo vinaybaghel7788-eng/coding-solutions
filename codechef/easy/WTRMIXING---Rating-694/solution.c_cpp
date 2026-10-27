@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int T;
+cin >> T;
+
+while (T--) {
+    int A, B, X, Y;
+    cin >> A >> B >> X >> Y;
+
+    if (B > A) {
+        if (X >= B - A)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    else if (B < A) {
+        if (Y >= A - B)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    else {
+        cout << "YES" << endl;
+    }
+}
+
+return 0;
+
+
+}
