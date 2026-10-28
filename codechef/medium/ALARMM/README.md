@@ -70,17 +70,43 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:53:53.847Z  
+**Submitted:** 2026-10-28T15:55:20.592Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, K;
+        cin >> N >> K;
+
+        string S;
+        cin >> S;
+
+        int alarms = 0;
+        int i = 0;
+
+        while (i < N) {
+            if (S[i] == '1') {
+                int pos = min(N - 1, i + K);
+
+                alarms++;
+
+                i = pos + 1;
+            } else {
+                i++;
+            }
+        }
+
+        cout << alarms << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
