@@ -66,16 +66,43 @@ BBBBAAAAABBBBBBB
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:53:14.474Z  
+**Submitted:** 2026-10-28T15:54:02.743Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N;
+        string S;
+        cin >> N >> S;
+
+        int count = 1, doors = 0;
+
+        for (int i = 1; i < N; i++) {
+            if (S[i] == S[i - 1]) {
+                count++;
+            } else {
+                count = 1;
+            }
+
+            if (count == 3) {
+                doors++;
+                count = 0;
+            }
+        }
+
+        cout << doors << endl;
+    }
+
+    return 0;
 }
+
 
 ```
 
