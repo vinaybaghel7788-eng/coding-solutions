@@ -72,36 +72,52 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:11:38.348Z  
+**Submitted:** 2026-11-04T16:13:01.804Z  
 
 ```c_cpp
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int T;
-    cin >> T;
+int t;
+cin >> t;
 
-    while (T--) {
-        int N, odd = 0;
-        int A[100];
+while (t--) {
+    int n;
+    cin >> n;
 
-        cin >> N;
+    int a[101];
 
-        for (int i = 0; i < N; i++) {
-            cin >> A[i];
-
-            if (A[i] % 2 != 0)
-                odd++;
-        }
-
-        if (odd % 2 == 0)
-            cout << N << endl;
-        else
-            cout << N - 1 << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
 
-    return 0;
+    int ans = 0;
+
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+
+        for (int j = i; j < n; j++) {
+
+            if (a[j] % 2 != 0) {
+                count++;
+            }
+
+            if (count % 2 == 0) {
+                int len = j - i + 1;
+
+                if (len > ans) {
+                    ans = len;
+                }
+            }
+        }
+    }
+
+    cout << ans << endl;
+}
+
+return 0;
+
 }
 ```
 
