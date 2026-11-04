@@ -72,17 +72,37 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:05:42.215Z  
+**Submitted:** 2026-11-04T16:10:53.978Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, odd = 0;
+        int A[100];
+
+        cin >> N;
+
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+
+            if (A[i] % 2 != 0)
+                odd++;
+        }
+
+        if (odd % 2 == 0)
+            cout << N << endl;
+        else
+            cout << N - 1 << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
