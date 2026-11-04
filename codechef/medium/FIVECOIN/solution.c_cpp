@@ -1,7 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int N;
+    cin >> N;
 
+    if (N >= 5)
+        cout << 1 + (N - 5);
+    else
+        cout << N;
+
+    return 0;
 }
