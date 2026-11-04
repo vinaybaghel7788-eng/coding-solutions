@@ -72,7 +72,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:12:26.308Z  
+**Submitted:** 2026-11-04T16:11:38.348Z  
 
 ```c_cpp
 #include <iostream>
@@ -83,28 +83,22 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int N, A[100];
-        cin >> N;
+        int N, odd = 0;
+        int A[100];
 
-        int first = -1, last = -1;
+        cin >> N;
 
         for (int i = 0; i < N; i++) {
             cin >> A[i];
 
-            if (A[i] % 2 != 0) {
-                if (first == -1)
-                    first = i;
-
-                last = i;
-            }
+            if (A[i] % 2 != 0)
+                odd++;
         }
 
-        if (first == -1 || (first == last)) {
-            cout << (first == -1 ? N : N - 1) << endl;
-        }
-        else {
-            cout << max(N - first - 1, last) << endl;
-        }
+        if (odd % 2 == 0)
+            cout << N << endl;
+        else
+            cout << N - 1 << endl;
     }
 
     return 0;
